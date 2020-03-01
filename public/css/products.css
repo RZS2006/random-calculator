@@ -1,0 +1,149 @@
+/* Banner */
+
+.banner {
+    background: linear-gradient(to right, #E9E9E9, #D6D6D6);
+    height: auto;
+}
+
+.banner-container {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.banner-container h6 {
+    font-size: 2.6rem;
+    color: rgb(40, 40, 40);
+}
+
+.banner-container h4 {
+    margin-top: 5px;
+    font-size: 4.4rem;
+}
+
+/* Showcase */
+
+.showcase-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 60px 0;
+}
+
+.showcase-item {
+    width: 95%;
+    padding: 30px 20px;
+    margin: 10px 0;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.2);
+}
+
+.showcase-item:hover {
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+}
+
+.showcase-item h4 {
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.showcase-item p {
+    font-size: 1.6rem;
+    margin-top: 10px;
+    color: rgb(40, 40, 40);
+}
+
+/* Contact */
+
+.contact {
+    background-color: rgb(230, 230, 230);
+    height: auto;
+}
+
+.contact-container {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-container h6 {
+    font-size: 2rem;
+    color: rgb(40, 40, 40);
+}
+
+.contact-container h4 {
+    font-size: 3.8rem;
+}
+
+.contact-container button {
+    height: 45px;
+    width: 160px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.contact-container button:hover {
+    background-color: rgb(20, 20, 20);
+    transition: 0.2s;
+}
+
+
+
+/* Tablet Media Queries */
+
+@media screen and (max-width: 768px) {
+
+    /* Banner Media Query */
+
+    .banner-container {
+        padding: 40px 20px;
+    }
+
+    /* Showcase Media Query*/
+
+    .showcase-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 0;
+    }
+}
+
+
+
+/* Phone Media Queries */
+
+@media screen and (max-width: 600px) {
+
+    /* Banner Media Query */
+
+    .banner-container {
+        padding: 30px 10px;
+    }
+
+    .banner-container h6 {
+        font-size: 2rem;
+    }
+
+    .banner-container h4 {
+        font-size: 3.2rem;
+    }
+
+    /* Showcase Media Query */
+
+    .showcase-container {
+        grid-template-columns: 1fr;
+        padding: 20px 0;
+    }
+
+    /* Contact Media Query */
+
+    .contact-container h4 {
+        font-size: 3.4rem;
+    }
+}
