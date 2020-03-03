@@ -1,0 +1,179 @@
+/* Banner */
+
+.banner {
+    background: center/cover url(../resource/sea-pic.jpg);
+    height: 54vh;
+    min-height: 280px;
+}
+
+.banner-container {
+    text-align: center;
+    padding: 60px 20px
+}
+
+.banner-container h4 {
+    color: white;
+    font-size: 4.6rem;
+}
+
+.banner-container p {
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+
+/* About */
+
+.about-container {
+    padding: 40px 10px;
+}
+
+.about-container p {
+    font-size: 1.8rem;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+/*Team*/
+
+.team-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 20px 10px;
+    min-width: 240px;
+    min-height: 300px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-text {
+    flex: 1;
+    background-color: white;
+    padding: 20px 10px;
+}
+
+.card-text-name {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.card-text-job {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.card-text-contact {
+    display: block;
+    width: 180px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px black solid;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 20px auto 0;
+}
+
+.card-text-contact:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+/*FAQ Section*/
+
+.faq-accordion {
+    margin-bottom: 15px;
+    border: 1px solid rgb(220, 220, 220);
+}
+
+.faq-title {
+    width: 100%;
+    min-height: 60px;
+    text-align: left;
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: rgb(240, 240, 240);
+    border: none;
+}
+
+.faq-content {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: white;
+    display: none;
+}
+
+.faq-content.active {
+    display: block;
+}
+
+.faq-content p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+
+
+/* Tablet Media Queries */
+
+@media screen and (max-width: 768px) {
+
+    /* Banner Media Query */
+
+    .banner-container {
+        padding: 40px 20px;
+    }
+
+    /*Team Media Query*/
+
+    .card {
+        width: 70%;
+    }
+
+    /*FAQ Media Query*/
+
+    .faq-title {
+        font-size: 1.6rem;
+    }
+
+    .faq-content p {
+        font-size: 1.4rem;
+    }
+
+}
+
+
+
+/* Phone Media Queries */
+
+@media screen and (max-width: 600px) {
+
+    /* Banner Media Query */
+
+    .banner-container {
+        padding: 30px 10px;
+    }
+
+    .banner-container h4 {
+        font-size: 3.2rem;
+    }
+
+    /* About Media Query */
+
+    .about-container p {
+        font-size: 1.6rem;
+    }
+}

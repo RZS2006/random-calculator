@@ -1,7 +1,7 @@
 /* Banner */
 
 .banner {
-    background: linear-gradient(to right, #E9E9E9, #D6D6D6);
+    background-color: rgb(230, 232, 235);
     height: auto;
 }
 
@@ -17,7 +17,7 @@
 
 .banner-container h4 {
     margin-top: 5px;
-    font-size: 4.4rem;
+    font-size: 4.6rem;
 }
 
 /* Showcase */
@@ -59,7 +59,7 @@
 /* Contact */
 
 .contact {
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(230, 232, 235);
     height: auto;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .contact-container h4 {
-    font-size: 3.8rem;
+    font-size: 4rem;
 }
 
 .contact-container button {
