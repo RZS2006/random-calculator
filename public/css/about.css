@@ -25,102 +25,132 @@
 /* About */
 
 .about-container {
-    padding: 40px 10px;
+    padding: 30px 10px;
 }
 
 .about-container p {
     font-size: 1.8rem;
     text-align: justify;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    color: rgb(40, 40, 40)
+}
+
+/* Showcase */
+
+.section-title {
+    padding: 80px 0 40px 0;
+    text-align: center;
+}
+
+.section-title h4 {
+    letter-spacing: 3px;
+    font-weight: 4;
+    font-size: 4.8rem;
+    text-transform: uppercase;
+}
+
+.showcase-item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+}
+
+.showcase-item {
+    width: 95%;
+    height: auto;
+    padding: 40px 20px;
+    background-color: white;
+    box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+.showcase-item h4 {
+    font-size: 4.8rem;
+}
+
+.showcase-item p {
+    font-size: 2.4rem;
+    color: rgb(40, 40, 40);
+    margin-top: 5px;
 }
 
 /*Team*/
 
-.team-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.team-item-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin: 20px 10px;
-    min-width: 240px;
-    min-height: 300px;
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+.team-item {
+    width: 95%;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }
 
-.card-img img {
-    width: 100%;
-    height: 100%;
+.team-item img {
+    width: 70%;
+    max-width: 200px;
+    border-radius: 50%;
 }
 
-.card-text {
-    flex: 1;
-    background-color: white;
-    padding: 20px 10px;
-}
-
-.card-text-name {
+.team-item h4 {
     font-size: 3rem;
-    text-align: center;
-}
-
-.card-text-job {
     margin-top: 10px;
-    font-size: 2rem;
-    font-weight: 300;
+}
+
+.team-item p {
+    font-size: 1.8rem;
+    color: rgb(40, 40, 40);
+}
+
+.team-item-contact-container {
+    margin-top: 20px;
     text-align: center;
 }
 
-.card-text-contact {
-    display: block;
-    width: 180px;
-    height: 40px;
-    background-color: transparent;
-    border: 1px black solid;
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin: 20px auto 0;
+.team-item-contact-container i {
+    margin: 0 5px;
 }
 
-.card-text-contact:hover {
-    background-color: black;
-    color: white;
+.team-item-contact-container i:hover {
+    color: rgb(20, 20, 20);
     transition: 0.2s;
 }
 
-/*FAQ Section*/
+/* FAQ Section */
+
+.faq-item {
+    margin-bottom: 10px;
+}
 
 .faq-accordion {
-    margin-bottom: 15px;
-    border: 1px solid rgb(220, 220, 220);
-}
-
-.faq-title {
     width: 100%;
-    min-height: 60px;
     text-align: left;
-    font-size: 2rem;
     padding: 10px 20px;
-    background-color: rgb(240, 240, 240);
+    font-size: 1.8rem;
+    border-radius: 4px;
     border: none;
+    background-color: rgb(220, 220, 220);
 }
 
-.faq-content {
-    width: 100%;
+.faq-panel {
     padding: 10px 20px;
-    background-color: white;
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgb(240, 240, 240);
     display: none;
 }
 
-.faq-content.active {
+.faq-panel.active {
     display: block;
 }
 
-.faq-content p {
+.faq-panel p {
     font-size: 1.6rem;
     line-height: 1.5;
 }
@@ -137,11 +167,25 @@
         padding: 40px 20px;
     }
 
+    /* Showcase Media Query */
+
+    .section-title {
+        padding: 40px 0 20px 0;
+    }
+
+    .section-title h4 {
+        font-size: 3.6rem;
+    } 
+
     /*Team Media Query*/
 
-    .card {
-        width: 70%;
-    }
+   .team-item-container {
+       grid-template-columns: 1fr;
+   }
+
+   .team-item {
+       margin: 8px 0;
+   }
 
     /*FAQ Media Query*/
 
@@ -175,5 +219,25 @@
 
     .about-container p {
         font-size: 1.6rem;
+    }
+
+    /* Showcase Media Query */
+
+    .showcase-item {
+        padding: 30px 10px;
+    }
+
+    .showcase-item h4 {
+        font-size: 4rem;
+    }
+
+    .showcase-item p {
+        font-size: 2rem;
+    }
+
+    /* Team Media Query */
+
+    .team-item h4 {
+        font-size: 2.8rem;
     }
 }

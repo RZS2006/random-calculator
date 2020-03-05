@@ -1,4 +1,4 @@
-const btns = document.querySelectorAll(".faq-title")
+const btns = document.querySelectorAll(".faq-accordion")
 
 btns.forEach(btn => {
     btn.addEventListener("click", () => {
