@@ -1,25 +1,26 @@
 /* Banner */
 
 .banner {
-    background-color: rgb(230, 232, 235);
-    height: auto;
+    background: center/cover url(../resource/forest-pic.jpg);
+    height: 54vh;
+    min-height: 280px;
 }
 
 .banner-container {
-    padding: 80px 20px;
     text-align: center;
-}
-
-.banner-container h6 {
-    font-size: 2.6rem;
-    color: rgb(40, 40, 40);
+    padding: 60px 20px
 }
 
 .banner-container h4 {
-    margin-top: 5px;
+    color: white;
     font-size: 4.6rem;
 }
 
+.banner-container p {
+    color: white;
+    font-size: 2rem;
+    margin-top: 10px;
+}
 /* Showcase */
 
 .showcase-container {
@@ -119,16 +120,8 @@
 /* Phone Media Queries */
 
 @media screen and (max-width: 600px) {
-
+    
     /* Banner Media Query */
-
-    .banner-container {
-        padding: 30px 10px;
-    }
-
-    .banner-container h6 {
-        font-size: 2rem;
-    }
 
     .banner-container h4 {
         font-size: 3.2rem;

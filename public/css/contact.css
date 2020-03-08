@@ -1,0 +1,166 @@
+/* Banner */
+
+.banner {
+    background: center/cover url(../resource/desert-pic.jpg);
+    height: 54vh;
+    min-height: 280px;
+}
+
+.banner-container {
+    text-align: center;
+    padding: 60px 20px
+}
+
+.banner-container h4 {
+    color: white;
+    font-size: 4.6rem;
+}
+
+.banner-container p {
+    color: white;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+/*Contact*/
+
+.contact-container {
+    display: flex;
+    min-height: calc(100vh - 80px);
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.method {
+    margin-left: 100px;
+}
+
+.method h4 {
+    font-size: 2.2rem;
+}
+
+.method p {
+    font-size: 1.4rem;
+    color: rgb(37, 37, 37);
+    margin-top: 10px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.text h4 {
+    font-size: 4rem;
+}
+
+.text p {
+    font-size: 1.6rem;
+    color: rgb(37, 37, 37);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form input, .form textarea {
+    width: 90%;
+    margin: 0 auto;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(37, 37, 37);
+    font-size: 1.6rem;
+    padding: 5px 0;
+}
+
+.form textarea {
+    resize: none;
+    height: auto;
+}
+
+label {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: rgb(37, 37, 37);
+}
+
+.form .button-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.button-container button {
+    height: 40px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: rgb(15, 15, 15);
+}
+
+
+
+/* Tablet Media Queries */
+
+@media screen and (max-width: 768px) {
+
+    /* Banner Media Query */
+
+    .banner-container {
+        padding: 40px 20px;
+    }
+
+    /*Contact Media Query*/
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .left {
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .method {
+        margin-left: 0;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+
+
+/* Phone Media Queries */
+
+@media screen and (max-width: 600px) {
+
+    /* Banner Media Query */
+
+    .banner-container h4 {
+        font-size: 3.2rem;
+    }
+}
