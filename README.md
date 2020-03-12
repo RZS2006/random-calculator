@@ -1,2 +1,2 @@
 # RandomCalculator
-website and calculators
+World's largest and most successful calculator company
