@@ -1,0 +1,70 @@
+/* Main */
+
+.calculator {
+    display: grid;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+}
+
+.calc-btn {
+    cursor: pointer;
+    font-size: 2.4rem;
+    border-collapse: collapse;
+    border: 1px solid rgb(150, 150, 150);
+    background-color: rgb(230, 230, 230);
+}
+
+.calc-btn:hover {
+    background-color: rgb(215, 215, 215);
+    transition: background-color 0.2s;
+}
+
+.calc-btn:active {
+    font-size: 2.2rem;
+}
+
+.output {
+    grid-column: span 4;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px;
+}
+
+.current {
+    color: white;
+    font-size: 3rem;
+}
+
+.previous {
+    color: rgb(230, 230, 230);
+    font-size: 1.4rem;
+}
+
+.span {
+    grid-column: span 2;
+}
+
+@media screen and (max-width: 768px) {
+
+    header, header .container {
+        display: block;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .logo-container, .title-container, .back-container{
+        width: 100%;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    .back-container button{
+        margin: 0 auto;
+    }
+}

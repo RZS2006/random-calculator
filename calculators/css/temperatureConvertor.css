@@ -1,0 +1,89 @@
+/* Main */
+
+.heading {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px 0 30px 0;
+}
+
+.input {
+    text-align: center;
+    width: 100%;
+}
+
+select, input {
+    width: 80%;
+    min-width: 260px;
+    margin: 10px auto;
+    height: 40px;
+    font-size: 1.6rem;
+    padding: 5px 10px;
+    border: rgb(160, 160, 160) 1px solid;
+    border-radius: 3px;
+    transition: width 0.2s;
+}
+
+select option {
+    font-size: 1.6rem;
+}
+
+input:focus {
+    width: 85%;
+    border: green 1px solid;
+}
+
+.input-button-container {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    width: 200px;
+    height: 45px;
+    margin: 10px;
+    font-size: 1.8rem;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+.convert-btn {
+    border: green 1px solid;
+}
+
+.convert-btn:hover {
+    background-color: green;
+}
+
+.reset-btn {
+    border: red 1px solid;
+}
+
+.reset-btn:hover {
+    background-color: red;
+}
+
+.output {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+#answer1, #answer2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+#answernum1, #answernum2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
