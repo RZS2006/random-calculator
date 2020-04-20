@@ -72,7 +72,7 @@ const operation = (oper) => {
             break;
     }
 
-    current.innerHTML = currentVal
+    current.innerHTML = "0"
     previous.innerHTML = previousVal
 
     equalsPressed = false
