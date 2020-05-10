@@ -64,12 +64,12 @@ function calculate() {
     }
 
     if (!validity) { 
-        answer1.innerHTML = "Please type in a number";
-        answernum1.innerHTML = ""
-        answerunit1.innerHTML = ""
-        answer2.innerHTML = ""
-        answernum2.innerHTML = ""
-        answerunit2.innerHTML = ""
+        answer1.innerText = "Please type in a number";
+        answernum1.innerText = ""
+        answerunit1.innerText = ""
+        answer2.innerText = ""
+        answernum2.innerText = ""
+        answerunit2.innerText = ""
     } 
     
     else if (validity) {
@@ -106,24 +106,24 @@ function calculate() {
             output2 = 0
         }
 
-        answernum1.innerHTML = output1.toFixed(2);
-        answernum2.innerHTML = output2.toFixed(2);
-        answer1.innerHTML = "Area: "
-        answer2.innerHTML = "Perimeter: "
-        answerunit1.innerHTML = " square units"
-        answerunit2.innerHTML = " units"
+        answernum1.innerText = output1.toFixed(2);
+        answernum2.innerText = output2.toFixed(2);
+        answer1.innerText = "Area: "
+        answer2.innerText = "Perimeter: "
+        answerunit1.innerText = " square units"
+        answerunit2.innerText = " units"
     }
 }
 
 function reset() {
     input1.value = "";
     input2.value = "";
-    answer1.innerHTML = "";
-    answer2.innerHTML = "";
-    answernum1.innerHTML = "";
-    answernum2.innerHTML = ""
-    answerunit1.innerHTML = ""
-    answerunit2.innerHTML = ""
+    answer1.innerText = "";
+    answer2.innerText = "";
+    answernum1.innerText = "";
+    answernum2.innerText = ""
+    answerunit1.innerText = ""
+    answerunit2.innerText = ""
 }
 
 // Event Listeners

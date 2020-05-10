@@ -17,8 +17,8 @@ let inputArr = []
 let answer;
 let equalsPressed = false
 
-current.innerHTML = "0"
-previous.innerHTML = previousVal
+current.innerText = "0"
+previous.innerText = previousVal
 
 //Functions
 
@@ -33,7 +33,7 @@ const append = (num) => {
     }
 
     currentVal += num.toString()
-    current.innerHTML = currentVal
+    current.innerText = currentVal
 
     equalsPressed = false
 }
@@ -72,8 +72,8 @@ const operation = (oper) => {
             break;
     }
 
-    current.innerHTML = "0"
-    previous.innerHTML = previousVal
+    current.innerText = "0"
+    previous.innerText = previousVal
 
     equalsPressed = false
 }
@@ -84,8 +84,8 @@ const allclear = () => {
     inputArr = []
     answer = undefined
 
-    current.innerHTML = "0"
-    previous.innerHTML = previousVal
+    current.innerText = "0"
+    previous.innerText = previousVal
 }
 
 const backspace = () => {
@@ -96,11 +96,11 @@ const backspace = () => {
     currentVal = currentVal.slice(0, -1)
 
     if (currentVal === "") {
-        current.innerHTML = "0"
+        current.innerText = "0"
         return
     }
 
-    current.innerHTML = currentVal
+    current.innerText = currentVal
 }
 
 const appendDecimal = () => {
@@ -110,7 +110,7 @@ const appendDecimal = () => {
 
     if (!currentVal.includes(".")) {
         currentVal += "."
-        current.innerHTML = currentVal
+        current.innerText = currentVal
     }
 
     equalsPressed = false
@@ -128,8 +128,8 @@ const compute = () => {
     let arrStr = inputArr.join("")
     answer = eval(arrStr)
 
-    current.innerHTML = answer
-    previous.innerHTML = previousVal
+    current.innerText = answer
+    previous.innerText = previousVal
 
     equalsPressed = true
 }
@@ -143,8 +143,8 @@ const shift = () => {
     previousVal = ""
     inputArr = []
     
-    current.innerHTML = currentVal
-    previous.innerHTML = previousVal
+    current.innerText = currentVal
+    previous.innerText = previousVal
 
     equalsPressed = false
 }

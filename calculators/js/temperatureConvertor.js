@@ -25,10 +25,10 @@ const convert = () => {
     }
 
     if (!validity) {
-        answernum1.innerHTML = ""
-        answernum2.innerHTML = ""
-        answer1.innerHTML = "Please type in a number"
-        answer2.innerHTML = ""
+        answernum1.innerText = ""
+        answernum2.innerText = ""
+        answer1.innerText = "Please type in a number"
+        answer2.innerText = ""
     }
 
     else if (validity) {
@@ -58,19 +58,19 @@ const convert = () => {
                 break;
         }
         
-        answernum1.innerHTML = result1.toFixed(2)
-        answernum2.innerHTML = result2.toFixed(2)
-        answer1.innerHTML = ` ${label1}`
-        answer2.innerHTML = ` ${label2}`
+        answernum1.innerText = result1.toFixed(2)
+        answernum2.innerText = result2.toFixed(2)
+        answer1.innerText = ` ${label1}`
+        answer2.innerText = ` ${label2}`
     }
 }
 
 const reset = () => {
     input.value = ""
-    answernum1.innerHTML = ""
-    answernum2.innerHTML = ""
-    answer1.innerHTML = ""
-    answer2.innerHTML = ""
+    answernum1.innerText = ""
+    answernum2.innerText = ""
+    answer1.innerText = ""
+    answer2.innerText = ""
 }
 
 // Event Listeners
