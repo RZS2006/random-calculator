@@ -1,36 +1,36 @@
 /* Hero */
 
 .hero {
-    background: center/cover url(../resource/mountain-pic.jpg);
+    background: center/cover url(../resource/mountain-pic-min.jpg);
     height: calc(100vh - 72px);
     min-height: 440px;
 }
 
 .hero-container{
-    width: 60%;
-    padding: 100px 20px;
+    width: 70%;
+    padding: 100px 0;
 }
 
 .hero-container h4 {
     color: white;
-    font-size: 4.2rem;
+    font-size: 5rem;
     text-transform: capitalize;
 }
 
 .hero-container p {
-    color: white;
+    color: rgb(250, 250, 250);
     margin-top: 10px;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .hero-button-container {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
 }
 
 .hero-button {
     height: 50px;
-    width: 180px;
+    width: 190px;
     margin-right: 20px;
     border: none;
     border-radius: 4px;
@@ -39,8 +39,8 @@
 }
 
 .hero-button.btn-primary {
-    color: white;
-    background-color: black;
+    color: rgb(255, 255, 255);
+    background-color: rgb(10, 10, 10);
 }
 
 .hero-button.btn-secondary {
@@ -50,28 +50,41 @@
 }
 
 .hero-button.btn-primary:hover {
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(15, 15, 15);
     transition: 0.2s;
 }
 
 .hero-button.btn-secondary:hover {
-    background-color: black;
-    border-color: black;
+    background-color: rgb(10, 10, 10);
+    border-color: rgb(10, 10, 10);
     transition: 0.2s;
 }
 
 /* Description */
 
+.section {
+    padding: 60px 0;
+}
+
 .section-title {
-    padding: 80px 0 40px 0;
+    margin-bottom: 40px;
     text-align: center;
 }
 
 .section-title h4 {
     letter-spacing: 3px;
-    font-weight: 4;
-    font-size: 4.8rem;
+    font-weight: 400;
+    font-size: 4.4rem;
     text-transform: uppercase;
+}
+
+.section-title h4::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    margin: 15px auto;
 }
 
 .description-item-container {
@@ -81,31 +94,77 @@
 }
 
 .description-item {
-    width: 95%;
+    width: 100%;
     padding: 30px;
     height: auto;
     text-align: center;
     border-radius: 8px;
 }
 
-.description-item:hover {
-    background-color: white;
-    box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.2);
-    transition: 0.4s;
-}
-
 .description-item h4 {
     margin-top: 20px;
     text-transform: uppercase;
     letter-spacing: 8px;
-    font-weight: 500;
-    font-size: 3rem;
+    font-weight: 400;
+    font-size: 3.2rem;
 }
 
 .description-item p {
     margin-top: 10px;
     font-size: 1.6rem;
     color: rgb(40, 40, 40);
+}
+
+.description-item i {
+    background-color: rgb(240, 240, 240);
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    font-size: 6rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sponsors */
+
+.sponsors {
+    background-color: rgb(240, 240, 240);
+    padding: 60px 0;
+}
+
+.sponsors-title {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.sponsors-title h4 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: rgb(100, 100, 100);
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+
+.sponsors-title h4::after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 2px;
+    background-color: rgb(100, 100, 100);
+    margin: 10px auto;
+}
+
+.sponsors-item-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+}
+
+.sponsors-item i {
+    color: rgb(100, 100, 100);
+    font-size: 6rem;
 }
 
 /* Showcase */
@@ -146,34 +205,34 @@
     font-size: 1.6rem;
     cursor: pointer;
     border-radius: 4px;
-    background-color: black;
+    background-color: rgb(10, 10, 10);
     color: white;
     border: none;
 }
 
 .showcase-item button:hover {
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(15, 15, 15);
     transition: 0.2s;
 }
 
 .showcase-button-container {
     display: flex;
     justify-content: center;
-    padding: 40px 0 80px;
+    margin-top: 40px;
 }
 
 .showcase-button {
     width: 200px;
-    height: 50px;
-    font-size: 2rem;
+    height: 45px;
+    font-size: 1.8rem;
     background-color: transparent;
-    border: black 1px solid;
+    border: rgb(10, 10, 10) 1px solid;
     cursor: pointer;
     border-radius: 4px;
 }
 
 .showcase-button:hover {
-    background-color: black;
+    background-color: rgb(10, 10, 10);
     color: white;
     transition: 0.2s;
 }
@@ -181,18 +240,26 @@
 /* Sign-up */
 
 .sign-up {
-    background: rgb(240, 240, 240);
+    background: rgb(230, 230, 230);
     height: auto;
 }
 
-.sign-up-container, .mobile-container {
-    padding: 60px 20px;
+.sign-up-container {
+    padding: 100px 20px;
     text-align: center;
 }
 
-.sign-up-container h4, .mobile-container h4 {
-    font-size: 4rem;
-    font-weight: 500;
+.sign-up-container h6 {
+    font-weight: 400;
+    font-size: 2.6rem;
+    text-transform: capitalize;
+    color: rgb(80, 80, 80);
+    margin-bottom: 20px;
+}
+
+.sign-up-container h4 {
+    font-size: 5rem;
+    font-weight: 400;
 }
 
 .sign-up-container p, .mobile-container p {
@@ -201,15 +268,15 @@
     margin-top: 5px;
 }
 
-.sign-up-button-container, .mobile-button-container {
-    margin-top: 20px;
+.sign-up-button-container {
+    margin-top: 40px;
     justify-content: center;
     display: flex;
 }
 
-.sign-up-button, .mobile-button {
+.sign-up-button {
     margin: 0 10px;
-    width: 160px;
+    width: 180px;
     height: 45px;
     font-size: 1.8rem;
     border: none;
@@ -219,22 +286,22 @@
 
 .sign-up-button.btn-primary {
     color: white;
-    background-color: black;
+    background-color: rgb(10, 10, 10);
 }
 
 .sign-up-button.btn-secondary {
     background-color: transparent;
-    border: black 1px solid;
+    border: rgb(10, 10, 10) 1px solid;
 }
 
 .sign-up-button.btn-primary:hover {
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(15, 15, 15);
     transition: 0.2s;
 }
 
 .sign-up-button.btn-secondary:hover {
     color: white;
-    background-color: black;
+    background-color: rgb(10, 10, 10);
     transition: 0.2s;
 }
 
@@ -245,18 +312,37 @@
     height: auto;
 }
 
+.mobile-container {
+    padding: 40px 20px;
+    text-align: center;
+}
+
 .mobile-container h4 {
     color: white;
+    font-size: 3.2rem;
+    font-weight: 400;
 }
 
 .mobile-container p {
     color: rgb(240, 240, 240);
 }
 
+.mobile-button-container {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
+
 .mobile-button {
     background-color: transparent;
     border: 1px white solid;
     color: white;
+    margin: 0 10px;
+    width: 160px;
+    height: 40px;
+    font-size: 1.6rem;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .mobile-button:hover {
@@ -279,7 +365,7 @@
 
     .hero-container {
         width: 100%;
-        padding: 40px 20px;
+        padding: 60px 20px;
         text-align: center;
     }
 
@@ -293,8 +379,8 @@
 
     /* Description Media Query */
 
-    .section-title {
-        padding: 40px 0 20px 0;
+    .section {
+        padding: 40px 0;
     }
 
     .section-title h4 {
@@ -309,6 +395,16 @@
         margin: 10px 0;
     }
 
+    /* Sponsors Media Query */
+
+    .sponsors-item-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sponsors-item {
+        margin: 10px 0;
+    }
+
     /* Showcase Media Query */
 
     .showcase-item-container {
@@ -317,10 +413,6 @@
 
     .showcase-item {
         margin: 10px 0;
-    }
-
-    .showcase-button-container {
-        padding: 20px 0 40px;
     }
 }
 
@@ -356,12 +448,20 @@
 
     /* Sign Up / Mobile Media Query */
 
-    .sign-up-container h4, .mobile-container h4 {
+    .sign-up-container h4 {
         font-size: 3rem;
     }
 
-    .sign-up-container, .mobile-container {
-        padding: 20px 10px
+    .mobile-container h4 {
+        font-size: 2.4rem;
+    }
+
+    .sign-up-container {
+        padding: 40px 10px
+    }
+
+    .mobile-container {
+        padding: 30px 10px;
     }
 
     .sign-up-button-container, .mobile-button-container {

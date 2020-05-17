@@ -92,10 +92,16 @@
     width: 100%;
     outline: none;
     border: none;
-    background-color: transparent;
+    background-color: rgb(240, 240, 240);
     border-bottom: 2px solid rgb(40, 40, 40);
     font-size: 1.6rem;
     padding: 5px 0;
+}
+
+.contact-message input:focus, .contact-message textarea:focus {
+    background-color: rgb(230, 230, 230);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transition: 0.2s;
 }
 
 .contact-message textarea {
@@ -106,7 +112,7 @@
 .contact-message label {
     width: 100%;
     font-size: 1.4rem;
-    margin-top: 15px;
+    margin: 15px 0 5px;
     color: rgb(40, 40, 40);
 }
 
