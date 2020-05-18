@@ -1,0 +1,73 @@
+<!-- Random Number Generator -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/randNumGenerator.css">
+    <script src="https://kit.fontawesome.com/adb4542310.js" crossorigin="anonymous"></script>
+    <title>Random Number Generator - Random Calculator</title>
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo-container">
+                    <img src="../../public/resource/randcalc-logo.png" alt="logo">
+                    <h4>Random Calculator</h4>
+                </div>
+                <div class="title-container">
+                    <h4>Random Number Generator</h4>
+                </div>
+                <div class="back-container">
+                    <a href="../../html/products.html"><button class="back-btn"><i class="fas fa-chevron-left fa-sm"></i>Back</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="container">
+            <div class="main-container">
+                <div class="input-container">
+                    <h4 class="heading">Input</h4>
+
+                    <div class="input-top-button-container">
+                        <button class="btn-top coin" id="coin">Flip A Coin</button>
+                        <button class="btn-top dice" id="dice">Roll A Dice</button>
+                    </div>
+
+                    <div class="input">
+                        <input type="number" name="min" id="min" placeholder="Minimum">
+                        <input type="number" name="max" id="max" placeholder="Maximum">
+                        <input type="number" name="decimal" id="decimal" placeholder="Decimal digits (optional)">
+                        <input type="number" name="amount" id="amount" placeholder="Output values (optional)">
+                    </div>
+
+                    <div class="input-button-container">
+                        <button class="btn generate-btn" id="generate">Generate</button>
+                        <button class="btn reset-btn" id="reset">Reset</button>
+                    </div>
+                </div>
+                <div class="output-container">
+                    <h4 class="heading">Output</h4>
+
+                    <div class="output">
+                        <p id="output"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="../js/randNumGenerator.js"></script>
+</html>

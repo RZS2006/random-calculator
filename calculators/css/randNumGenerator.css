@@ -1,0 +1,88 @@
+/* Main */
+
+.heading {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px 0 30px 0;
+}
+
+.input {
+    text-align: center;
+    width: 100%;
+}
+
+input {
+    width: 80%;
+    min-width: 260px;
+    margin: 10px auto;
+    height: 40px;
+    font-size: 1.6rem;
+    padding: 5px 10px;
+    border: rgb(160, 160, 160) 1px solid;
+    border-radius: 3px;
+    transition: width 0.2s;
+}
+
+input:focus {
+    width: 85%;
+    border: green 1px solid;
+}
+
+.input-button-container, .input-top-button-container {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-top {
+    width: 200px;
+    height: 45px;
+    margin: 10px;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.btn {
+    width: 200px;
+    height: 45px;
+    margin: 10px;
+    font-size: 1.8rem;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+.generate-btn {
+    border: green 1px solid;
+}
+
+.generate-btn:hover {
+    background-color: green;
+}
+
+.reset-btn {
+    border: red 1px solid;
+}
+
+.reset-btn:hover {
+    background-color: red;
+}
+
+.output {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+#output {
+    font-size: 1.8rem;
+}
