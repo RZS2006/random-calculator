@@ -1,8 +1,6 @@
 # random-calculator
 
-A landing website for a company called Random Calculator, which offers many different JavaScript calculators.
-
-Website: <https://randomcalculator.netlify.app>
+A landing website for a company called Random Calculator which offers many different JavaScript calculators.
 
 *29.02.2020 - 18.05.2020*
 
